@@ -8,7 +8,7 @@
       <router-view/>   
     </div>
     <div id="footer">
-      <p>This app was written by Nathan Bitcheno. Code for this app is free to reuse. <a href=""><i class="fa fa-github-square"></i></a></p> 
+      <p>This app was written by Nathan Bitcheno. Code for this app is free to reuse. <a href="https://github.com/nathanbitcheno/covid-19"><i class="fa fa-github-square"></i></a></p> 
       <p>Data on this site comes from the <a href="https://github.com/NovelCOVID">NovelCOVID API Project.</a></p>
     </div>
   </div>  
