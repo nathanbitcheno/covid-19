@@ -27,8 +27,6 @@
             </table>
         </div>
         <div class="buttons">
-            <button v-if="!allDataStore" @click="allCountries">View All Countries</button>
-            <button v-if="allDataStore" @click="clear">Reset</button>
             <div style="display: inline">
                 <input placeholder="Search by Country" type="text" v-model="countryFilter" class="unselectable" />
             </div>
@@ -55,6 +53,10 @@
             </td>
         </tr>
         </table>
+        <div class="buttons">
+            <button v-if="!allDataStore" @click="allCountries">View All Countries</button>
+            <button v-if="allDataStore" @click="clear">Reset</button>
+        </div>
     </div>
   </div>
 </template>
@@ -273,11 +275,11 @@ input {
   background: rgb(219, 241, 255);
   color: rgb(0, 110, 255);
   font-weight: bold;
-  margin: 15px 15px 15px 0;
+  margin: 0px 0px 10px 0px;
   border: none;
   display: inline;
   outline: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -315,10 +317,12 @@ only screen and (max-width: 760px),
         text-align: center;
         border-bottom: 1px solid #eee;
         border-right: 0px;
+        margin: 0px;
     }
 
      .globaltable {
      min-width: 0px;
+     margin: 0px;
      }
 	.maintable td:before { 
 		/* Now like a table header */
@@ -345,7 +349,10 @@ only screen and (max-width: 760px),
         margin: 0px;
     }
     button {
-        margin: 0px 10px 10px 0px;
+        float: right;
+    }
+    input {
+      width: 80%;
     }
 }
 </style>
